@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #F6F6F6;
+}
+
+header {
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 2rem;
+}
+
+.faq-slider {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+// Example JavaScript for FAQ slider (basic)
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+});
